@@ -1,0 +1,263 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+  background-color: #F3F5FC;
+  font-family: "inter";
+  /* add a background color to the page */
+}
+.logo-container {
+  float: left;
+  width: 3%;
+  height: 3%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.text_input-wrapper1 {
+  position: absolute;
+  top: 150px;
+  /* adjust the value to set the input down */
+  left: 20%;
+  /* center the input horizontally */
+  transform: translateX(-50%);
+  /* center the input horizontally */
+  font-family: "inter";
+  font-size: 32px;
+  color: #0A3871;
+}
+
+.text_input-wrapper1 input {
+  color: #0A3871;
+  font-size: 32px;
+  font-family: "inter";
+  border: none; /* removed border */
+  padding: 10px; /* added padding for better appearance */
+  width: 80%; /* increased width */
+  opacity: 1.0;
+  background-color: #F3F5FC; /* added background color to make the input field visible */
+  border-radius: 10px; /* added border radius to make the input field look better */
+}
+
+.text_input-wrapper1 input::placeholder:focus {
+  background-color: #fff; /* change background color on focus */
+  opacity: 0.8; /* change opacity on focus */
+}
+
+.text_input-wrapper1 input::placeholder:focus {
+  background-color: #0A3871; /* change background color of selected text */
+  color: #fff; /* change text color of selected text */
+}
+
+.label_input-wrapper {
+  position: absolute;
+  top: 10px;
+  /* adjust the value to set the label down */
+  left: 50%;
+  /* center the label horizontally */
+  transform: translateX(-50%);
+  /* center the label horizontally */
+}
+
+.containerencrypted {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; /* reduce the width to make it more compact */
+  height: auto; /* set the height to auto to fit the content */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 32px 32px 32px 32px;
+  opacity: 1.0;
+  box-shadow: 0px 20px 40px #D2D3D7;
+  padding: 20px;
+  margin: 40px auto; /* add more margin to separate from other elements */
+  overflow-y: auto; /* allow the container to scroll if content exceeds height */
+  text-align: center;
+  float: right; /* add this line to move the container to the right */
+
+  
+}
+
+.image-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* add some padding to give it some breathing room */
+}
+
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 32px 32px 0 0;
+  max-width: 100%; /* add this line to prevent the image from exceeding the container width */
+  max-height: 100vh; /* add this line to prevent the image from exceeding the container height */
+}
+
+.label_input-wrapper {
+  position: relative;
+  /* remove absolute positioning */
+  width: 100%;
+  /* set the width to 100% */
+  text-align: center;
+  /* center the text horizontally */
+  margin: 20px auto;
+  /* add margin to center the element */
+}
+
+.label_input-wrapper-i {
+  position: absolute;
+  bottom: 120px;
+  left: 45%;
+  transform: translateX(-20%);
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.button-container .button-wrapper button {
+  display: flex;
+  font-size: 16px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #0A3871;
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+ 
+ 
+}
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row; /* change to row to align buttons horizontally */
+  align-items: center;
+  margin: 0 auto;
+}
+.button-wrapper {
+  margin: 10px; /* add margin to separate buttons */
+}
+
+.button-wrapper button {
+  display: inline-block; /* change to inline-block to align buttons horizontally */
+  font-size: 16px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #0A3871;
+  color: #fff;
+  cursor: pointer;
+}
+ 
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 768px) {
+  body {
+    height: 100vh; /* add this line to allow the body to take up the full height */
+  }
+  .logo-container {
+    width: 10%;
+    height: 10%;
+    margin: 20px auto;
+  }
+
+  
+
+  .image-container {
+    display: none; /* hide the image container */
+  }
+  /* For mobile devices and tablets */
+  .label_input_wrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    font-family: "inter";
+    font-size: 24px;
+    color: #0A3871;
+    z-index: 1;
+  }
+  .label_input-wrapper-i {
+    position: absolute;
+    bottom: 550px;
+    left: 25%;
+    transform: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .containerencrypted .label_input-wrapper:nth-child(3) label {
+    font-size: 10px;
+  }
+  .text_input-wrapper1 {
+    position: relative; /* change to relative positioning */
+    top: 20; /* remove top positioning */
+    left: 50; /* remove left positioning */
+    transform: none; /* remove transform */
+    margin: 20px auto; /* add margin to center the input */
+  }
+  .text_input-wrapper1 input {
+    width: 100%; /* make the input field full-width */
+    max-width: 55%;
+  font-size: 24px; /* reduce font size to accommodate longer text */
+  white-space: pre-wrap; /* allow text to wrap to a new line */
+  word-wrap: break-word; /* break long words to a new line */
+  overflow-wrap: break-word; /* break long words to a new line */
+  }
+  .button-container { /* add a new wrapper element */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .button-wrapper {
+    
+    margin: 20px;  /* add margin to center the button */
+    
+    }
+  .containerencrypted {
+    width: auto; /* make the container full-width on mobile devices */
+    max-width: 100%; /* add a max-width to prevent overlap */
+    max-height: 3vh; /* adjust the max-height to fit the content */
+    overflow-y: auto; /* allow the container to scroll if content exceeds max-height */
+    padding: 20px; /* add some padding to give it some breathing room */
+    margin: 20px auto; /* add margin to center the container */
+    text-align: center; /* center the container horizontally */
+    min-height: auto; /* adjust this value to your liking */
+  height: auto; /* or set to auto to allow dynamic height */
+  max-height: none; /* remove max-height or set to none */
+  float:none;
+  clear:both;
+  position: relative;
+  transform: translateY(400px);
+    
+  }
+}
